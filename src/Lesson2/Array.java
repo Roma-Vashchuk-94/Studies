@@ -11,6 +11,7 @@ public class Array {
         System.out.println("List:" + Arrays.toString(listOfNumbers));
         System.out.println("The Smallest Value: " + theSmallestValue(listOfNumbers));
         System.out.println("The Largest Value: " + theLargestValue(listOfNumbers));
+        someMethod(listOfNumbers.length);
     }
     static int theSmallestValue(int[] array) {
         int smallValue = array[0];
@@ -30,5 +31,8 @@ public class Array {
             }
         }
         return largestValue;
+    }
+    static void someMethod(int a) {
+        System.out.println(a);
     }
 }
