@@ -17,8 +17,8 @@ public class Array {
 
     static void arrayPrint(int[] array) {
         System.out.println("Array is:");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+        for (int j : array) {
+            System.out.print(j + " ");
         }
     }
 
