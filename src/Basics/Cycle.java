@@ -1,4 +1,4 @@
-package Lesson2;
+package Basics;
 
 public class Cycle {
     public static void main(String[] args) {
