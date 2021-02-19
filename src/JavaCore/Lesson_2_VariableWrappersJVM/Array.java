@@ -22,6 +22,7 @@ public class Array {
         }
     }
 
+
     static void reverseArrayPrint(int[] array) {
         System.out.println("Array from the end is:");
         for (int i = array.length - 1; i >= 0; i--) {
