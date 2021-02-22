@@ -12,11 +12,11 @@ public class Dog extends Animal {
     }
 
     @Override
-    public void run(String name, int speed) {
-        if (speed < 40) {
-            System.out.println("Dog " + name + " run slowly");
+    public void run() {
+        if (this.getSpeed() < 40) {
+            System.out.println("Dog " + this.getName() + " run slowly");
         } else {
-            System.out.println("Dog " + name + " run fast");
+            System.out.println("Dog " + this.getName() + " run fast");
         }
     }
 }

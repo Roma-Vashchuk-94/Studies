@@ -31,7 +31,7 @@ public class Animal {
         System.out.println(name + " run");
     }
 
-    public void run(String name, int speed) {
+    public void run() {
         if (speed < 40) {
             System.out.println(name + " run slowly");
         } else {
