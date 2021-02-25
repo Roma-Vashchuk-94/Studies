@@ -45,18 +45,6 @@ public class SeasonsTest {
         return monthFromEnum;
     }
 
-
-
-    public static boolean monthName (String line) {
-        boolean b = false;
-        for (Months month : Months.values()) {
-            if (month.name().equals(line)) {
-                b = true;
-            }
-        }
-        return b;
-    }
-
     public static void allDataAboutTheMonth(Months month) {
         System.out.println("You chose the month: " + month.name());
         month.sameSeason();
