@@ -2,7 +2,7 @@ package JavaCore.Lesson_9_Exeption.task1;
 
 public class HumanTest {
     public static void main(String[] args) throws IncorrectEmailException, UnderAgeException {
-        Human human = new Human("FDf", 19, "dfdf");
+        Human human = new Human("FDf", 19, "df@df");
         chekForNextStep(human);
     }
 
