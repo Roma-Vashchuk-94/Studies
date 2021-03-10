@@ -24,8 +24,8 @@ public class Storage {
         storageList.add(commodity);
     }
 
-    public void removeFromStorage(Commodity commodity) {
-        storageList.remove(commodity);
+    public void removeFromStorage(int index) {
+        storageList.remove(index);
     }
 
     public void replaceInStorage(int index, Commodity newCommodity) {

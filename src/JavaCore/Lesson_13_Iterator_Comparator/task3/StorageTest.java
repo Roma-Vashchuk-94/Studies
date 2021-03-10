@@ -33,7 +33,7 @@ public class StorageTest {
                 case 2: {
                     try {
                         System.out.println("\nEnter index of commodity which you want to remove:\n");
-                        storage.removeFromStorage(storage.getStorageList().get(scanner.nextInt()));
+                        storage.removeFromStorage(scanner.nextInt());
                         System.out.println("!!!success!!!");
                     } catch (IndexOutOfBoundsException e) {
                         System.out.println("\n!!!!!You haven't any commodity!!!!!\n");
