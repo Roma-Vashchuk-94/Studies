@@ -26,8 +26,8 @@ public class StringTest {
     public static void theShortestWord(String[] list) {
         int index = 0;
         String word = list[0];
-        for (int i = 1; i < list.length - 1; i++) {
-            if (list[i].length() <= list[i + 1].length() && list[i].length() < word.length()) {
+        for (int i = 1; i < list.length; i++) {
+            if (list[i].length() <= word.length()) {
                 index = i;
                 word = list[i];
             }
@@ -39,8 +39,8 @@ public class StringTest {
     public static void theLongestWord(String[] list) {
         int index = 0;
         String word = list[0];
-        for (int i = 1; i < list.length - 1; i++) {
-            if (list[i].length() >= list[i + 1].length() && list[i].length() >= word.length()) {
+        for (int i = 1; i < list.length; i++) {
+            if (list[i].length() >= word.length()) {
                 index = i;
                 word = list[i];
             }
