@@ -3,11 +3,11 @@ package JavaCore.Lesson_14_Set_Queue.task1;
 public class Purchase implements Comparable<Purchase> {
 
     private String name;
-    private int amount;
+    private int count;
 
-    public Purchase(String name, int amount) {
+    public Purchase(String name, int count) {
         this.name = name;
-        this.amount = amount;
+        this.count = count;
     }
 
     public String getName() {
@@ -18,25 +18,21 @@ public class Purchase implements Comparable<Purchase> {
         this.name = name;
     }
 
-    public int getAmount() {
-        return amount;
+    public int getCount() {
+        return count;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    @Override
-    public int compareTo(Purchase o) {
-        return this.name.compareTo(o.getName());
+    public void setCount(int count) {
+        this.count = count;
     }
 
     @Override
     public String toString() {
-        return "Purchase{" +
-                "name='" + name + '\'' +
-                ", amount=" + amount +
-                '}';
+        return "Purchase{" + "name='" + name + '\'' + ", count=" + count + '}';
+    }
+
+    @Override
+    public int compareTo(Purchase purchase) {
+        return this.name.compareTo(purchase.getName());
     }
 }
-
