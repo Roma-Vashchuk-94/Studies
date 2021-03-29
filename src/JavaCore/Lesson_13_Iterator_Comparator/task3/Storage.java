@@ -2,6 +2,7 @@ package JavaCore.Lesson_13_Iterator_Comparator.task3;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Storage {
@@ -37,20 +38,43 @@ public class Storage {
     }
 
     public void sortByLength() {
-        storageList.sort(new CommodityLengthComparator());
+        storageList.sort(commodityLengthComparator);
     }
 
     public void sortByWeight() {
-        storageList.sort(new CommodityWeightComparator());
+        storageList.sort(commodityWeightComparator);
     }
 
     public void sortByWidth() {
-        storageList.sort(new CommodityWidthComparator());
+        storageList.sort(commodityWidthComparator);
     }
 
     public void print(int index) {
         System.out.println(storageList.get(index));
     }
+
+    Comparator<Commodity> commodityLengthComparator = new Comparator<Commodity>() {
+        @Override
+        public int compare(Commodity o1, Commodity o2) {
+            return o1.getLength() - o2.getLength();
+        }
+    };
+
+    Comparator<Commodity> commodityWeightComparator = new Comparator<Commodity>() {
+        @Override
+        public int compare(Commodity o1, Commodity o2) {
+            return o1.getWeight() - o2.getWeight();
+        }
+    };
+
+    Comparator<Commodity> commodityWidthComparator = new Comparator<Commodity>() {
+        @Override
+        public int compare(Commodity o1, Commodity o2) {
+            return o1.getWidth() - o2.getWidth();
+        }
+    };
+
+
 
 
 }

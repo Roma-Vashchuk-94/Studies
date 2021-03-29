@@ -1,5 +1,6 @@
 package JavaCore.Lesson_13_Iterator_Comparator.task2;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class User implements Comparable<User> {
@@ -67,4 +68,5 @@ public class User implements Comparable<User> {
     public String toString() {
         return this.name + " " + this.age + " " + this.email;
     }
+
 }
