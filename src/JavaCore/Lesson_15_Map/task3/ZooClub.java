@@ -43,6 +43,8 @@ public class ZooClub {
         if (isAnimalFree(animal)) {
             zooClubList.get(human).add(animal);
             System.out.println("You added " + animal + " to " + human);
+        } else {
+            System.out.println("Sorry, someone else has this pet");
         }
     }
 
@@ -73,17 +75,13 @@ public class ZooClub {
         System.out.println("You removed " + human + "from zoo club");
     }
 
-
-
     public boolean isAnimalFree(Animal animal) {
-        boolean isAnimalFree = true;
         for (Map.Entry<Human, List<Animal>> entry : zooClubList.entrySet()) {
             if (entry.getValue().contains(animal)) {
-                isAnimalFree = false;
-                System.out.println("Sorry. " + entry.getKey() + " has this animal (" + animal + ")");
+                return false;
             }
         }
-        return isAnimalFree;
+        return true;
     }
 
     public void print() {

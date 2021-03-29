@@ -8,9 +8,8 @@ public class ZooClubTest {
 
     public static void main(String[] args) {
         ZooClub zooClub = new ZooClub();
-        boolean b = true;
         System.out.println("Welcome to zoo club.");
-        while (b) {
+        while (true) {
             try {
                 System.out.println("Chose your action:\n1 - add a person;" +
                         "\n2 - add the animal to a person;\n3 - remove the animal from a person;" +
@@ -34,8 +33,7 @@ public class ZooClubTest {
                         break;
                     } case ("6"): {
                         System.out.println("BYE =(");
-                        b = false;
-                        break;
+                        return;
                     }
                 }
             } catch (Exception e) {
